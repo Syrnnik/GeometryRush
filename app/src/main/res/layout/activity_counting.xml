@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CountingActivity">
+
+    <TextView
+        android:id="@+id/errorMsg"
+        style="@style/AppText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/consola"
+        android:textSize="14sp"
+        android:textColor="@color/errorRed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/sideAText"
+                    style="@style/AppText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:fontFamily="@font/consola"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:id="@+id/sideAInput"
+                    style="@style/AppText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/consola"
+                    android:textSize="24sp"
+                    android:inputType="numberDecimal"
+                    tools:ignore="Autofill,LabelFor" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/sideBText"
+                    style="@style/AppText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:fontFamily="@font/consola"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:id="@+id/sideBInput"
+                    style="@style/AppText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/consola"
+                    android:textSize="24sp"
+                    android:inputType="numberDecimal"
+                    tools:ignore="Autofill,LabelFor" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/sideCText"
+                    style="@style/AppText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:fontFamily="@font/consola"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:id="@+id/sideCInput"
+                    style="@style/AppText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/consola"
+                    android:textSize="24sp"
+                    android:inputType="numberDecimal"
+                    tools:ignore="Autofill,LabelFor" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/sideDText"
+                    style="@style/AppText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:fontFamily="@font/consola"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:id="@+id/sideDInput"
+                    style="@style/AppText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/consola"
+                    android:textSize="24sp"
+                    android:inputType="numberDecimal"
+                    tools:ignore="Autofill,LabelFor" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/perimeterText"
+                    style="@style/AppText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:fontFamily="@font/consola"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:id="@+id/perimeterInput"
+                    style="@style/AppText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/consola"
+                    android:textSize="24sp"
+                    android:inputType="numberDecimal"
+                    tools:ignore="Autofill,LabelFor" />
+
+                <Button
+                    android:id="@+id/piPerimeter_btn"
+                    style="@style/AppText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/consola"
+                    android:contentDescription="@string/perimeter"
+                    android:visibility="gone"
+                    android:textSize="24sp"
+                    android:text="π"
+                    android:onClick="addPiToInput"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/areaText"
+                    style="@style/AppText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:fontFamily="@font/consola"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:id="@+id/areaInput"
+                    style="@style/AppText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/consola"
+                    android:textSize="24sp"
+                    android:inputType="numberDecimal"
+                    tools:ignore="Autofill,LabelFor" />
+
+                <Button
+                    android:id="@+id/piArea_btn"
+                    style="@style/AppText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/consola"
+                    android:contentDescription="@string/area"
+                    android:visibility="gone"
+                    android:textSize="24sp"
+                    android:text="π"
+                    android:onClick="addPiToInput"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/volumeText"
+                    style="@style/AppText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:fontFamily="@font/consola"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:id="@+id/volumeInput"
+                    style="@style/AppText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/consola"
+                    android:textSize="24sp"
+                    android:inputType="numberDecimal"
+                    tools:ignore="Autofill,LabelFor" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/diagonalText"
+                    style="@style/AppText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:fontFamily="@font/consola"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:id="@+id/diagonalInput"
+                    style="@style/AppText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/consola"
+                    android:textSize="24sp"
+                    android:inputType="numberDecimal"
+                    tools:ignore="Autofill,LabelFor" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/heightText"
+                    style="@style/AppText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:fontFamily="@font/consola"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:id="@+id/heightInput"
+                    style="@style/AppText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/consola"
+                    android:textSize="24sp"
+                    android:inputType="numberDecimal"
+                    tools:ignore="Autofill,LabelFor" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/medianText"
+                    style="@style/AppText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:fontFamily="@font/consola"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:id="@+id/medianInput"
+                    style="@style/AppText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/consola"
+                    android:textSize="24sp"
+                    android:inputType="numberDecimal"
+                    tools:ignore="Autofill,LabelFor" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/radiusText"
+                    style="@style/AppText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:fontFamily="@font/consola"
+                    android:textSize="24sp" />
+
+                <EditText
+                    android:id="@+id/radiusInput"
+                    style="@style/AppText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/consola"
+                    android:textSize="24sp"
+                    android:inputType="numberDecimal"
+                    tools:ignore="Autofill,LabelFor" />
+
+            </LinearLayout>
+
+<!--            <View-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="50dp" />-->
+
+            <Button
+                android:id="@+id/count_btn"
+                style="@style/AppButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginStart="68dp"
+                android:layout_marginEnd="68dp"
+                android:fontFamily="@font/consola"
+                android:text="@string/count_btn_text"
+                android:textSize="24sp"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp" />
+
+            <TextView
+                android:id="@+id/sideAOutput"
+                style="@style/AppText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/consola"
+                android:textSize="24sp"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/sideBOutput"
+                style="@style/AppText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/consola"
+                android:textSize="24sp"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/sideCOutput"
+                style="@style/AppText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/consola"
+                android:textSize="24sp"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/sideDOutput"
+                style="@style/AppText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/consola"
+                android:textSize="24sp"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/perimeterOutput"
+                style="@style/AppText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/consola"
+                android:textSize="24sp"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/areaOutput"
+                style="@style/AppText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/consola"
+                android:textSize="24sp"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/volumeOutput"
+                style="@style/AppText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/consola"
+                android:textSize="24sp"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/diagonalOutput"
+                style="@style/AppText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/consola"
+                android:textSize="24sp"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/heightOutput"
+                style="@style/AppText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/consola"
+                android:textSize="24sp"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/medianOutput"
+                style="@style/AppText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/consola"
+                android:textSize="24sp"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/radiusOutput"
+                style="@style/AppText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/consola"
+                android:textSize="24sp"
+                android:lineSpacingExtra="4dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="8dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

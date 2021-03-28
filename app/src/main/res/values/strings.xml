@@ -1,0 +1,168 @@
+<resources>
+    <!-- Main Strings -->
+    <string name="app_name">Geometry Rush</string>
+
+    <!-- Titles -->
+    <string name="figures_types_title">Figures</string>
+    <string name="figures_settings_title">settings</string>
+
+    <!-- Button Texts -->
+    <string name="geometry_btn_text">Geometry</string>
+    <string name="count_btn_text">Count</string>
+
+    <!-- Texts -->
+    <string name="what_find_text">What find:</string>
+    <string name="with_what_text">Is known:</string>
+    <string name="other_settings_text">Figure settings:</string>
+    <string name="enter">Enter</string>
+    <string name="figure_definition_text">Figure definition</string>
+    <string name="formulas_text">Formulas</string>
+    <string name="definitions_text">Definitions</string>
+    <string name="pythagorean_theorem_text">Pythagorean theorem</string>
+    <!-- Errors -->
+    <string name="wrong_number">Wrong input type</string>
+    <string name="wrong_side_size">Wrong side size</string>
+    <string name="not_dot">Change , to .</string>
+
+    <!-- Figures -->
+    <string name="rectangle_btn_text">Rectangle</string>
+    <string name="triangle_btn_text">Triangle</string>
+    <string name="trapeze_btn_text">Trapeze</string>
+    <string name="parallelogram_btn_text">Parallelogram</string>
+    <string name="circle_btn_text">Circle</string>
+    <string name="parallelepiped_btn_text">Parallelepiped</string>
+    <string name="tetrahedron_btn_text">Tetrahedron</string>
+    <string name="pyramid_btn_text">Pyramid</string>
+    <string name="sphere_btn_text">Sphere</string>
+
+    <!-- Figures Types -->
+    <string name="type_2d">type_2d</string>
+    <string name="type_3d">type_3d</string>
+
+    <!-- Figure Parts -->
+    <string name="sideA">Side A</string>
+    <string name="sideB">Side B</string>
+    <string name="sideC">Side С</string>
+    <string name="sideD">Side D</string>
+    <string name="perimeter">Perimeter</string>
+    <string name="area">Area</string>
+    <string name="volume">Volume</string>
+    <string name="diagonal">Diagonal</string>
+    <string name="height">Height</string>
+    <string name="median">Median</string>
+    <string name="radius">Radius</string>
+
+    <!-- Other Settings -->
+    <string name="equilateral">Equilateral</string>
+    <string name="isosceles">Isosceles</string>
+    <string name="rectangular">Rectangular</string>
+
+
+
+
+    <!-- Formulas -->
+    <!-- TODO: find volumetric figures -->
+    <!-- Sides -->
+    <!-- TODO: find sides with diagonal -->
+    <string name="rectangle_sideA_fromSideBAndPerimeter_formula">a=P:2-b</string>
+    <string name="rectangle_sideA_fromPerimeterAndArea_formula">a=(P:2+√((P:2)²-4×S))/2</string>
+    <string name="rectangle_sideA_fromSideBAndArea_formula">a=S:b</string>
+    <string name="square_sideA_fromPerimeter_formula">a=P:4</string>
+    <string name="square_sideA_fromArea_formula">a=√S</string>
+
+    <string name="triangle_sideA_from2SidesAndPerimeter_formula">a=P-b-c</string>
+    <string name="triangle_sideA_fromAreaAndHeight_formula">a=S×2:h</string>
+    <string name="triangle_sideA_fromSideC_isoAndRect_formula">a=(c√2):2</string>
+    <string name="triangle_sideA_fromSideBAndSideC_rect_formula">a=√(c²-b²)</string>
+    <string name="triangle_sideC_fromSideA_isoAndRect_formula">c=a√2</string>
+    <string name="triangle_sideC_from2Sides_rect_formula">c=√(a²+b²)</string>
+    <string name="triangle_sideA_fromSideCAndPerimeter_formula">a=(P-c):2</string>
+
+    <string name="trapeze_sideA_from3SidesAndPerimeter_formula">a=P-b-c-d</string>
+    <string name="trapeze_sideA_fromSideBAndAreaAndHeight_formula">a=S×2:h-b</string>
+    <string name="trapeze_sideA_from2SidesAndPerimeter_iso_formula">a=P-b-c×2</string>
+
+    <string name="parallelogram_sideA_fromSideBAndPerimeter_formula">a=P:2-b</string>
+    <string name="parallelogram_sideA_fromAreaAndHeight_formula">a=S:h</string>
+
+    <!-- Radius -->
+    <string name="circle_radius_fromPerimeter_formula">R=P:(2×π)</string>
+    <string name="circle_radius_fromArea_formula">R=√(S:π)</string>
+
+    <!-- Perimeters -->
+    <!-- TODO: find perimeters with diagonal -->
+    <string name="rectangle_perimeter_formula">P=(a+b)×2</string>
+    <string name="rectangle_perimeter_fromSideAAndArea_formula">P=(a+S:a)×2</string>
+    <string name="rectangle_perimeter_fromSideBAndArea_formula">P=(b+S:b)×2</string>
+    <string name="square_perimeter_formula">P=a×4</string>
+    <string name="square_perimeter_fromArea_formula">P=√S×4</string>
+
+    <string name="triangle_perimeter_formula">P=a+b+c</string>
+    <string name="triangle_perimeter_equ_formula">P=a×3</string>
+    <string name="triangle_perimeter_iso_formula">P=a+b×2</string>
+
+    <string name="trapeze_perimeter_formula">P=a+b+c+d</string>
+    <string name="trapeze_perimeter_fromSides_iso_formula">P=a+b+c×2</string>
+
+    <string name="parallelogram_perimeter_fromSides_formula">P=(a+b)×2</string>
+
+    <string name="circle_perimeter_formula">P=2×π×R</string>
+
+    <!-- Areas -->
+    <!-- TODO: find areas with diagonal -->
+    <string name="rectangle_area_formula">S=a×b</string>
+    <string name="rectangle_area_fromSideAAndPerimeter_formula">S=a×(P:2-a)</string>
+
+    <string name="triangle_height_formula">h=S×2:a</string>
+
+    <string name="square_area_formula">S=a²</string>
+    <string name="square_area_fromPerimeter_formula">S=(P:4)²</string>
+
+    <string name="triangle_area_formula">S=a×h:2</string>
+
+    <string name="trapeze_area_formula">S=(a+b):2×h</string>
+
+    <string name="parallelogram_area_formula">S=a×b</string>
+
+    <string name="circle_area_formula">S=π×R²</string>
+<!--    <string name="sphere_area_formula">S=4×π×R²</string>-->
+
+    <!-- Diagonal -->
+<!--    <string name="pythagorean_formula">c²=a²+b²</string>-->
+    <string name="rectangle_diagonal_formula">d=√(a²+b²)</string>
+    <string name="square_diagonal_formula">d=a√2</string>
+
+    <!-- Volumes -->
+<!--    <string name="parallelepiped_volume_formula">S=a×b×с</string>-->
+<!--    <string name="cube_volume_formula">S=a³</string>-->
+<!--    <string name="tetrahedron_volume_formula">S=a²</string>-->
+<!--    <string name="pyramid_volume_formula">S=a×h:2</string>-->
+<!--    <string name="sphere_volume_formula">S=4×π:3×R³</string>-->
+
+    <!-- Heights -->
+    <string name="trapeze_height_formula">h=S×2:(c+d)</string>
+
+    <string name="parallelogram_height_fromSideAAndArea_formula">h=S:a</string>
+
+    <!-- Algebra -->
+    <string name="square_formula">ax²+bx+c=0</string>
+<!--    <string name="disc_formula">D=b²-4×a×c</string>-->
+    <string name="disc_values_formula">x=(-b±√(b²-4×a×c))/2×a</string>
+
+
+
+
+<!--    &lt;!&ndash; Theory &ndash;&gt;-->
+<!--    <string name="description">Details</string>-->
+<!--    &lt;!&ndash; Definitions &ndash;&gt;-->
+<!--    <string name="perimeter_definition">- sum of all sides of the figure.</string>-->
+<!--    <string name="area_definition">- multiplication length by width.</string>-->
+<!--    <string name="volume_definition">- space occupied by the shape.</string>-->
+<!--    <string name="diagonal_definition">- line connecting 2 unconnected vertexes.</string>-->
+<!--    <string name="height_definition">- line extending from the vertex perpendicular to the opposite side.</string>-->
+<!--    <string name="median_definition">- line connecting vertex to the middle of the opposite side.</string>-->
+
+<!--    &lt;!&ndash; Theorems &ndash;&gt;-->
+<!--    <string name="pythagoreanTheorem_definition">- the sum of the squares of the legs is equal to the square of the hypotenuse.</string>-->
+
+</resources>

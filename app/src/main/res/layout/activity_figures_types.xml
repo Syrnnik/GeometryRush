@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FiguresTypesActivity">
+
+    <ExpandableListView
+        android:id="@+id/expList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/flatFigures"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp">
+
+                <ImageButton
+                    android:id="@+id/rectangle_btn"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:onClick="openSettingMenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/rectangle_btn_image"
+                    android:contentDescription="@string/rectangle_btn_text"
+                    android:layout_marginStart="20dp" />
+
+<!--                <Button-->
+<!--                    android:id="@+id/btn1"-->
+<!--                    style="@style/Widget.AppCompat.Button.Borderless"-->
+<!--                    android:onClick="openSettingMenu"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="@string/rectangle_btn_text"-->
+<!--                    android:textSize="18sp"-->
+<!--                    android:layout_marginStart="20dp" />-->
+
+                <ImageButton
+                    android:id="@+id/triangle_btn"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:onClick="openSettingMenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/triangle_btn_image"
+                    android:contentDescription="@string/triangle_btn_text"
+                    android:layout_marginStart="20dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/trapeze_btn"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:onClick="openSettingMenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/trapeze_btn_image"
+                    android:contentDescription="@string/trapeze_btn_text"
+                    android:layout_marginStart="20dp" />
+
+                <ImageButton
+                    android:id="@+id/parallelogram_btn"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:onClick="openSettingMenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/parallelogram_btn_image"
+                    android:contentDescription="@string/parallelogram_btn_text"
+                    android:layout_marginStart="20dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/circle_btn"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:onClick="openSettingMenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/circle_btn_image"
+                    android:contentDescription="@string/circle_btn_text"
+                    android:layout_marginStart="20dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/volumetricFigures"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="@+id/flatFigures"
+        app:layout_constraintStart_toStartOf="@+id/flatFigures"
+        app:layout_constraintTop_toBottomOf="@+id/flatFigures">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp">
+
+                <ImageButton
+                    android:id="@+id/parallelepiped_btn"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:onClick="openSettingMenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/parallelepiped_btn_image"
+                    android:contentDescription="@string/parallelepiped_btn_text"
+                    android:layout_marginStart="20dp" />
+
+                <ImageButton
+                    android:id="@+id/tetrahedron_btn"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:onClick="openSettingMenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/tetrahedron_btn_image"
+                    android:contentDescription="@string/tetrahedron_btn_text"
+                    android:layout_marginStart="20dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/pyramid_btn"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:onClick="openSettingMenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/pyramid_btn_image"
+                    android:contentDescription="@string/pyramid_btn_text"
+                    android:layout_marginStart="20dp" />
+
+                <ImageButton
+                    android:id="@+id/sphere_btn"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:onClick="openSettingMenu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/sphere_btn_image"
+                    android:contentDescription="@string/sphere_btn_text"
+                    android:layout_marginStart="20dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
